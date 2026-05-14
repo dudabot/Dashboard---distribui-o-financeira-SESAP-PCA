@@ -34,7 +34,7 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    folder = "c:/Users/aduda/Downloads/Planilhas PNCP-PCA/dados"
+    folder = "."
     files = [f for f in os.listdir(folder) if f.endswith('.csv') or f.endswith('.xlsx')]
     if len(files) == 0:
         return pd.DataFrame()
